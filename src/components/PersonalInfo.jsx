@@ -2,16 +2,18 @@ import React from "react"
 
 const PersonalInfo = ({ name, email, phone, updateForm, formErrors }) => {
   return (
-    <div className="flex flex-col  gap-2">
-      <h2 className="font-bold text-3xl text-marine-blue ">Personal info</h2>
-      <p className="text-sm text-cool-gray ">
-        Please provide your name, email address, and phone number.
-      </p>
+    <div className="flex flex-col  md:gap-2 gap-4 max-md:py-8 max-md:w-full">
+      <div className="flex flex-col gap-1">
+        <h2 className="font-bold text-2xl text-marine-blue ">Personal info</h2>
+        <p className="text-paragraph md:text-sm text-cool-gray ">
+          Please provide your name, email address, and phone number.
+        </p>
+      </div>
 
-      <div className="mt-8 flex flex-col gap-6">
-        <div className="flex flex-col">
+      <div className="md:mt-8 flex flex-col gap-6">
+        <div className="flex flex-col ">
           <div className="flex justify-between">
-            <label htmlFor="name" className="text-sm">
+            <label htmlFor="name" className="text-paragraph md:text-sm">
               Name
             </label>
             {formErrors.name && (
@@ -33,7 +35,9 @@ const PersonalInfo = ({ name, email, phone, updateForm, formErrors }) => {
         </div>
         <div className="flex flex-col">
           <div className="flex justify-between">
-            <label htmlFor="email">Email Address</label>
+            <label htmlFor="email" className="text-paragraph md:text-sm">
+              Email Address
+            </label>
             <p className="text-red-500 text-sm">{formErrors.email}</p>
           </div>
 
@@ -51,7 +55,9 @@ const PersonalInfo = ({ name, email, phone, updateForm, formErrors }) => {
         </div>
         <div className="flex flex-col">
           <div className="flex justify-between">
-            <label htmlFor="phone">Phone Number</label>
+            <label htmlFor="phone" className="text-paragraph md:text-sm">
+              Phone No.
+            </label>
             <p className="text-red-500 text-sm">{formErrors?.phone}</p>
           </div>
 

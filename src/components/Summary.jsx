@@ -29,10 +29,10 @@ const Summary = ({
   }, 0)
 
   return (
-    <div className="flex flex-col gap-10 ">
+    <div className="flex flex-col gap-10 max-md:py-6 max-md:w-full">
       <div className="flex flex-col gap-2">
-        <h2 className="font-bold text-3xl text-marine-blue">Finishing up</h2>
-        <p className="text-sm text-cool-gray">
+        <h2 className="font-bold text-2xl text-marine-blue">Finishing up</h2>
+        <p className="text-paragraph md:text-sm text-cool-gray">
           Double-check everything looks OK before confirming.
         </p>
       </div>

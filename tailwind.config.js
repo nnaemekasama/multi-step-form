@@ -3,6 +3,12 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        "sm": "640px",
+        "md": "800px",
+        "lg": "1024px",
+        "xl": "1280px",
+      },
       colors: {
         "marine-blue": "hsl(213, 96%, 18%)",
         "purplish-blue": "hsl(243, 100%, 62%)",
@@ -25,8 +31,8 @@ export default {
         bold: 700,
       },
       backgroundImage: {
-        mobile: "url('../src/assets/images/bg-sidebar-desktop.svg')",
-        desktop: "url('../src/assets/images/bg-sidebar-mobile.svg')",
+        desktop: "url('../src/assets/images/bg-sidebar-desktop.svg')",
+        mobile: "url('../src/assets/images/bg-sidebar-mobile.svg')",
       },
     },
   },

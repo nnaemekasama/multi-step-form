@@ -32,3 +32,13 @@ body {
 input, button{
   cursor: pointer;
 }
+
+
+@media screen and (max-width: 800px)  {
+
+  body {
+    position: relative;
+  }
+  
+  
+}

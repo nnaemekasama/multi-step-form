@@ -85,15 +85,15 @@ function App() {
     const regex =
       /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
     if (!values.name) {
-      errors.name = "Username is required"
+      errors.name = "Name is required"
     }
     if (!values.email) {
       errors.email = "email is required"
     } else if (!regex.test(values.email)) {
-      errors.email = "this is not a valid email format"
+      errors.email = "this email format is invalid"
     }
     if (!values.phone) {
-      errors.phone = "Phone no. is required"
+      errors.phone = "Phone is required"
     }
 
     return errors
@@ -102,9 +102,9 @@ function App() {
   return (
     <>
       <div>
-        <div className="flex flex-col min-h-screen  items-center justify-center bg-light-blue ">
-          <div className="flex flex-row bg-white-color   w-2/3 min-w-[50rem] h-[35rem]  rounded-lg p-3">
-            <aside className="flex flex-col w-1/3 min-w-[33%] bg-mobile bg-no-repeat bg-center bg-cover rounded-lg px-6 py-6">
+        <div className="flex flex-col min-h-screen   items-center justify-center bg-light-blue ">
+          <div className="max-md:absolute top-[15%]  max-md:z-10 max-md:w-5/6 max-md:min-w-[300px] max-md:max-w-[565px]  md:flex md:flex-row bg-white-color  md:w-2/3 md:min-w-[50rem] md:h-[35rem]  rounded-lg md:p-3">
+            <aside className="max-md:bg-mobile max-md:fixed max-md:top-0 max-md:left-0 max-md:right-0 max-md:z-[-10] max-md:flex-row max-md:h-[200px] max-md:w-full max-md:justify-center max-md:items-start flex flex-col w-1/3 min-w-[33%] bg-desktop bg-no-repeat bg-center bg-cover md:rounded-lg px-6 py-6">
               {sideBar.map((item, i) => {
                 const index = i + 1
                 return (
@@ -122,7 +122,7 @@ function App() {
                     >
                       {index}
                     </button>
-                    <div className="flex flex-col">
+                    <div className="flex flex-col max-md:hidden">
                       <p className="uppercase font-extralight text-sm text-cool-gray">
                         Step {index}
                       </p>
@@ -135,9 +135,11 @@ function App() {
               })}
             </aside>
             {isLastStep && submitted ? (
-              <LastPage />
+              <div className="max-md:px-8  max-md:bg-white max-md:rounded-lg  md:w-2/3 md:min-w-[66%]  md:px-20 md:py-6 flex md:flex-col md:justify-between">
+                <LastPage />
+              </div>
             ) : (
-              <form className="w-2/3 min-w-[66%]  px-20 py-6 flex flex-col justify-between">
+              <form className="max-md:px-8  max-md:bg-white max-md:rounded-lg  md:w-2/3 md:min-w-[66%]  md:px-20 md:py-6 flex md:flex-col md:justify-between">
                 {currentIndex === 0 && (
                   <PersonalInfo
                     {...formData}
@@ -160,7 +162,7 @@ function App() {
                 )}
 
                 <div
-                  className={`flex ${
+                  className={`max-md:fixed bottom-0 left-0 right-0 max-md:p-4 max-md:bg-magnolia-color flex ${
                     isFirstStep ? "flex-row-reverse" : "flex"
                   } justify-between mt-20`}
                 >

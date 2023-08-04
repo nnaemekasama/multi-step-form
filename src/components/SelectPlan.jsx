@@ -11,15 +11,17 @@ const SelectPlan = ({ plan, updateForm, planLength }) => {
   // }
 
   return (
-    <div className="flex flex-col gap-2 ">
-      <h2 className="font-bold text-3xl text-marine-blue ">Select Plan</h2>
-      <p className="text-sm text-cool-gray">
-        You have the option of monthly or yearly billing.
-      </p>
-      <div className="mt-8 flex justify-between">
+    <div className="flex flex-col gap-2  max-md:py-6 max-md:w-full">
+      <div className="flex flex-col gap-1">
+        <h2 className="font-bold text-2xl text-marine-blue ">Select Plan</h2>
+        <p className="text-paragraph md:text-sm text-cool-gray">
+          You have the option of monthly or yearly billing.
+        </p>
+      </div>
+      <div className="flex flex-col md:mt-8 md:flex-row  gap-3 justify-between">
         <label
           htmlFor="Arcade"
-          className={`flex flex-col  rounded-lg p-4 gap-10 justify-between  min-w-[110px] max-w-[140px] ${
+          className={`flex flex-row md:flex-col gap-4   rounded-lg p-4 md:gap-10 md:justify-between  md:min-w-[110px] md:max-w-[140px] ${
             plan === "Arcade"
               ? "bg-magnolia-color outline outline-1 outline-marine-blue"
               : "bg-transparent outline outline-1 outline-light-blue"
@@ -27,7 +29,9 @@ const SelectPlan = ({ plan, updateForm, planLength }) => {
         >
           <img src={Arcade} alt="Arcade-icon" width={30} />
           <div>
-            <p className="text-sm text-marine-blue font-bold">Arcade</p>
+            <p className="text-paragraph md:text-sm text-marine-blue font-bold">
+              Arcade
+            </p>
             <p className="text-sm text-cool-gray">
               $
               {!planLength
@@ -50,7 +54,7 @@ const SelectPlan = ({ plan, updateForm, planLength }) => {
         </label>
         <label
           htmlFor="Advanced"
-          className={`flex flex-col  rounded-lg p-4 gap-10 justify-between  min-w-[110px] max-w-[140px] ${
+          className={`flex flex-row md:flex-col gap-4   rounded-lg p-4 md:gap-10 md:justify-between  md:min-w-[110px] md:max-w-[140px] ${
             plan === "Advanced"
               ? "bg-magnolia-color outline outline-1 outline-marine-blue"
               : "bg-transparent outline outline-1 outline-light-blue"
@@ -58,7 +62,9 @@ const SelectPlan = ({ plan, updateForm, planLength }) => {
         >
           <img src={Advanced} alt="Advanced-icon" width={30} />
           <div>
-            <p className="text-sm text-marine-blue font-bold">Advanced</p>
+            <p className="text-paragraph md:text-sm text-marine-blue font-bold">
+              Advanced
+            </p>
             <p className="text-sm text-cool-gray">
               $
               {!planLength
@@ -81,7 +87,7 @@ const SelectPlan = ({ plan, updateForm, planLength }) => {
         </label>
         <label
           htmlFor="Pro"
-          className={`flex flex-col  rounded-lg p-4 gap-10 justify-between  min-w-[110px] max-w-[140px] ${
+          className={`flex flex-row md:flex-col gap-4   rounded-lg p-4 md:gap-10 md:justify-between  md:min-w-[110px] md:max-w-[140px] ${
             plan === "Pro"
               ? "bg-magnolia-color outline outline-1 outline-marine-blue"
               : "bg-transparent outline outline-1 outline-light-blue"
@@ -89,7 +95,9 @@ const SelectPlan = ({ plan, updateForm, planLength }) => {
         >
           <img src={Pro} alt="pro-icon" width={30} />
           <div>
-            <p className="text-sm text-marine-blue font-bold">Pro</p>
+            <p className="text-paragraph md:text-sm text-marine-blue font-bold">
+              Pro
+            </p>
             <p className="text-sm text-cool-gray">
               ${!planLength ? planOptions.Pro.monthly : planOptions.Pro.yearly}/
               {!planLength ? "mo" : "yr"}
