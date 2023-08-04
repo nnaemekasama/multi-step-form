@@ -21,7 +21,7 @@ const SelectPlan = ({ plan, updateForm, planLength }) => {
       <div className="flex flex-col md:mt-8 md:flex-row  gap-3 justify-between">
         <label
           htmlFor="Arcade"
-          className={`flex flex-row md:flex-col gap-4   rounded-lg p-4 md:gap-10 md:justify-between  md:min-w-[110px] md:max-w-[140px] ${
+          className={`flex flex-row md:flex-col gap-4   rounded-lg p-4 md:gap-10 md:justify-between  md:min-w-[110px]  ${
             plan === "Arcade"
               ? "bg-magnolia-color outline outline-1 outline-marine-blue"
               : "bg-transparent outline outline-1 outline-light-blue"
@@ -54,7 +54,7 @@ const SelectPlan = ({ plan, updateForm, planLength }) => {
         </label>
         <label
           htmlFor="Advanced"
-          className={`flex flex-row md:flex-col gap-4   rounded-lg p-4 md:gap-10 md:justify-between  md:min-w-[110px] md:max-w-[140px] ${
+          className={`flex flex-row md:flex-col gap-4   rounded-lg p-4 md:gap-10 md:justify-between  md:min-w-[110px]  ${
             plan === "Advanced"
               ? "bg-magnolia-color outline outline-1 outline-marine-blue"
               : "bg-transparent outline outline-1 outline-light-blue"
@@ -87,7 +87,7 @@ const SelectPlan = ({ plan, updateForm, planLength }) => {
         </label>
         <label
           htmlFor="Pro"
-          className={`flex flex-row md:flex-col gap-4   rounded-lg p-4 md:gap-10 md:justify-between  md:min-w-[110px] md:max-w-[140px] ${
+          className={`flex flex-row md:flex-col gap-4   rounded-lg p-4 md:gap-10 md:justify-between  md:min-w-[110px]  ${
             plan === "Pro"
               ? "bg-magnolia-color outline outline-1 outline-marine-blue"
               : "bg-transparent outline outline-1 outline-light-blue"

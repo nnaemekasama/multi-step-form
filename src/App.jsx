@@ -103,7 +103,7 @@ function App() {
     <>
       <div>
         <div className="flex flex-col min-h-screen   items-center justify-center bg-light-blue ">
-          <div className="max-md:absolute top-[15%]  max-md:z-10 max-md:w-5/6 max-md:min-w-[300px] max-md:max-w-[565px]  md:flex md:flex-row bg-white-color  md:w-2/3 md:min-w-[50rem] md:h-[35rem]  rounded-lg md:p-3">
+          <div className="max-md:absolute top-[15%]  max-md:z-10 max-md:w-5/6 max-md:min-w-[300px] max-md:max-w-[565px]  md:flex md:flex-row bg-white-color  md:w-2/3 md:min-w-[50rem] max-w-[55rem] md:h-[35rem]  rounded-lg md:p-3">
             <aside className="max-md:bg-mobile max-md:fixed max-md:top-0 max-md:left-0 max-md:right-0 max-md:z-[-10] max-md:flex-row max-md:h-[200px] max-md:w-full max-md:justify-center max-md:items-start flex flex-col w-1/3 min-w-[33%] bg-desktop bg-no-repeat bg-center bg-cover md:rounded-lg px-6 py-6">
               {sideBar.map((item, i) => {
                 const index = i + 1
