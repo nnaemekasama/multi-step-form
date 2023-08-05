@@ -41,8 +41,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://www.frontendmentor.io/solutions/tailwind-css-react-SkMAbl7wxK)
+- Live Site URL: (https://multi-step-form-flax.vercel.app/)
 
 ## My process
 
@@ -67,9 +67,9 @@ Got more acquainted with Tailwind CSS, this is the first challenge I did with it
 
 ## Author
 
-- Website - [NNODIM NNAEMEKA](https://nnaemekasama.vercel.app)
-- Frontend Mentor - [@nnaemekasama](https://www.frontendmentor.io/profile/nnaemekasama)
-- Twitter - [@fiendmandm](https://www.twitter.com/fiendmandm)
+- Website - (https://nnaemekasama.vercel.app)
+- Frontend Mentor - (https://www.frontendmentor.io/profile/nnaemekasama)
+- Twitter - (https://www.twitter.com/fiendmandm)
 
 
 
