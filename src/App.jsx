@@ -99,6 +99,12 @@ function App() {
     return errors
   }
 
+  const handleClick = (i) => {
+    if (currentIndex > i) {
+      goToSection(i)
+    }
+  }
+
   return (
     <>
       <div>
@@ -113,7 +119,7 @@ function App() {
                     className="flex items-center mb-4 text-white-color"
                   >
                     <button
-                      onClick={() => goToSection(i)}
+                      onClick={() => handleClick(i)}
                       className={`mr-6 w-10 h-10 rounded-full border border-red-100 ${
                         currentIndex === i
                           ? "bg-light-gray text-marine-blue"
